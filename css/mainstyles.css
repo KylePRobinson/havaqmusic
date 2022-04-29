@@ -4,11 +4,11 @@ body {
 }
 
 p {
-    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 300;
-    font-size: 20pt;
-    letter-spacing: 3px;
-    color: rgb(000, 000, 000);
+    font-size: 16pt;
+    letter-spacing: 5px;
+    color: rgb(000, 255, 240);
     text-shadow: 0px 0px 12px rgb(000, 000, 000);
 }
 
@@ -30,7 +30,7 @@ div.headerAt {
     margin: auto;
     width: 300px;
     border-radius: 5px;
-    background-color: rgb(000, 255, 240);
+    background-color: black;
 }
 
 div.linkCard {
@@ -44,22 +44,24 @@ div.linkCard {
 
 div.cardButton p {
     margin: 0 auto;
-    padding: 8px;
-    color: black;
+    padding: 24px;
+    color: rgb(000, 255, 240);
     font-weight: bold;
-    font-size: 24pt;
-    font-weight: 400;
-    font-variant: small-caps;
-    text-shadow: 0px 0px 23px rgb(000, 000, 000);
+    font-size: 16pt;
+    /*font-variant-caps: ;*/
+    text-transform: lowercase;
+    font-weight: 300;
+    text-shadow: 0px 0px 25px rgb(000, 255, 240, 0.200);
 }
 
 div.cardButton {
     margin-top: 25px;
     width: 100%;
-    color: black;
     text-align: center;
-    background-color: rgb(000, 255, 240);
-    border-radius: 5px;    
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid rgb(000, 255, 240);
+    box-shadow: 0px 0px 10px 0px rgba(0, 255, 238, 0.100);
 }
 
 div.cardButton::after {
@@ -71,9 +73,10 @@ div.cardButton::after {
     border-right: solid 2px #000;
 }
 
-div.cardButton:hover {
+div.cardButton:hover, div.cardButton p:hover {
     color: black;
-    background-color: white;
+    background-color: rgb(000, 255, 240);
+    font-weight: 400;
 }
 
 a:link, a:visited, a:hover, a:active {
