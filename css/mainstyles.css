@@ -2,12 +2,13 @@
     margin: auto;
     width: 50%;
     height: 100%;
+    max-width: 900px;
 }
 
 /* Tablets */
-@media(max-width:768px){
+@media screen and (max-width:768px){
     .container {
-        margin: auto 0;
+        margin: auto;
         width:100%;
     }
 
@@ -17,9 +18,9 @@
 }
 
 /* Phones (Don't you guys have phones??) */
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
     .container {
-        margin: auto 0;
+        margin: auto;
         width: 100%;
     }
 
@@ -29,6 +30,11 @@
 }
 
 @media screen and (min-width: 600px) {
+    .container {
+        margin: auto;
+        width: 100%;
+    }
+
     p {
         font-size: 26pt;
     }
