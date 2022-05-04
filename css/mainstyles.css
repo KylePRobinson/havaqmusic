@@ -1,3 +1,11 @@
+.container {
+    margin: auto;
+    height: 100%;
+    max-height: 800px;
+	width: 100%;
+    max-width: 400px;
+}
+
 body {
     background-color: black;
     margin: 5% auto;
@@ -22,20 +30,20 @@ div.headerIcon {
 }
 
 div.headerIcon img {
-    width: 200px;
+    max-width: 200px;
     margin: 0;
 }
 
 div.headerAt {
     margin: auto;
-    width: 300px;
+    max-width: 300px;
     border-radius: 5px;
     background-color: black;
 }
 
 div.linkCard {
     margin: 0 auto;
-    width: 400px;
+    max-width: 400px;
     /*
     text-align: center;
     border: 1px solid aquamarine;
