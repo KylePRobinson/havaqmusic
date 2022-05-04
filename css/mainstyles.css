@@ -72,7 +72,7 @@ body {
 p {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     color: rgb(000, 255, 240);
     text-shadow: 0px 0px 12px rgb(000, 000, 000);
 }
@@ -80,7 +80,6 @@ p {
 div.headerIcon {
     margin: auto;
     max-width: 40%;
-    text-align: center;
     /*
     border: 1px solid aquamarine;
     */
@@ -89,11 +88,12 @@ div.headerIcon {
 div.headerIcon img {
     max-width: 100%;
     max-height: 100%;
-    display: block;
 }
 
 div.headerAt {
+    margin: 0 auto;
     background-color: black;
+    text-align: center;
 }
 
 div.linkCard {
@@ -107,7 +107,7 @@ div.linkCard {
 
 div.cardButton p {
     margin: 0 auto;
-    padding: 2%;
+    padding: 5%;
     color: rgb(000, 255, 240);
     font-weight: 300;
     /*font-variant-caps: ;*/
@@ -122,6 +122,7 @@ div.cardButton {
     background-color: black;
     border: 1px solid rgb(000, 255, 240);
     box-shadow: 0px 0px 10px 0px rgba(0, 255, 238, 0.100);
+    transition: border-radius .4s, background-color .8s, color .8s;
 }
 
 div.cardButton:hover, div.cardButton p:hover {
@@ -130,6 +131,7 @@ div.cardButton:hover, div.cardButton p:hover {
     background-color: rgb(000, 255, 240);
     border-radius: 20px;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    transition: border-radius .4s, background-color .8s, color .8s;
 }
 
 a:link, a:visited, a:hover, a:active {
