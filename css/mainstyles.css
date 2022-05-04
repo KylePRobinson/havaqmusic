@@ -2,26 +2,49 @@
     margin: auto;
     width: 50%;
     height: 100%;
-    max-width: 900px;
 }
 
-/* Tablets */
-@media screen and (max-width:768px){
-    .container {
-        margin: auto;
-        width:100%;
-    }
-
-    p {
-        font-size: 48pt;
-    }
-}
-
-/* Phones (Don't you guys have phones??) */
-@media screen and (max-width:600px) {
+/* Phones (Don't you guys have phones?) */
+@media only screen and (max-width: 600px) {
     .container {
         margin: auto;
         width: 100%;
+    }
+
+    p {
+        font-size: 28pt;
+    }
+}
+
+/* Large phones and small tablets */
+@media only screen and (min-width: 600px) {
+    .container {
+        margin: auto;
+        width: 100%;
+    }
+
+    p {
+        font-size: 28pt;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+
+    p {
+        font-size: 28pt;
+    }
+}
+
+/* Laptops & Desktops */
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: auto;
+        width: 50%;
     }
 
     p {
@@ -29,14 +52,15 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+/* Big boi devices */
+@media only screen and (min-width: 1200px) {
     .container {
         margin: auto;
-        width: 100%;
+        width: 600px;
     }
 
     p {
-        font-size: 26pt;
+        font-size: 24pt;
     }
 }
 
@@ -69,15 +93,12 @@ div.headerIcon img {
 }
 
 div.headerAt {
-    margin: auto;
-    max-width: 300px;
-    border-radius: 5px;
     background-color: black;
 }
 
 div.linkCard {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     /*
     text-align: center;
     border: 1px solid aquamarine;
@@ -99,7 +120,6 @@ div.cardButton {
     width: 100%;
     text-align: center;
     background-color: black;
-    border-radius: 5px;
     border: 1px solid rgb(000, 255, 240);
     box-shadow: 0px 0px 10px 0px rgba(0, 255, 238, 0.100);
 }
@@ -108,6 +128,7 @@ div.cardButton:hover, div.cardButton p:hover {
     font-weight: 600;
     color: black;
     background-color: rgb(000, 255, 240);
+    border-radius: 20px;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
