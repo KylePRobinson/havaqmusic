@@ -1,9 +1,37 @@
 .container {
     margin: auto;
+    width: 50%;
     height: 100%;
-    max-height: 800px;
-	width: 100%;
-    max-width: 400px;
+}
+
+/* Tablets */
+@media(max-width:768px){
+    .container {
+        margin: auto 0;
+        width:100%;
+    }
+
+    p {
+        font-size: 48pt;
+    }
+}
+
+/* Phones (Don't you guys have phones??) */
+@media(max-width:600px) {
+    .container {
+        margin: auto 0;
+        width: 100%;
+    }
+
+    p {
+        font-size: 24pt;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 26pt;
+    }
 }
 
 body {
@@ -14,7 +42,6 @@ body {
 p {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
-    font-size: 16pt;
     letter-spacing: 5px;
     color: rgb(000, 255, 240);
     text-shadow: 0px 0px 12px rgb(000, 000, 000);
@@ -22,7 +49,7 @@ p {
 
 div.headerIcon {
     margin: auto;
-    max-width: 400px;
+    max-width: 40%;
     text-align: center;
     /*
     border: 1px solid aquamarine;
@@ -30,8 +57,9 @@ div.headerIcon {
 }
 
 div.headerIcon img {
-    max-width: 200px;
-    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 div.headerAt {
@@ -43,7 +71,7 @@ div.headerAt {
 
 div.linkCard {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 80%;
     /*
     text-align: center;
     border: 1px solid aquamarine;
@@ -52,10 +80,9 @@ div.linkCard {
 
 div.cardButton p {
     margin: 0 auto;
-    padding: 24px;
+    padding: 2%;
     color: rgb(000, 255, 240);
     font-weight: 300;
-    font-size: 16pt;
     /*font-variant-caps: ;*/
     text-transform: lowercase;
     text-shadow: 0px 0px 25px rgb(000, 255, 240, 0.200);
@@ -69,15 +96,6 @@ div.cardButton {
     border-radius: 5px;
     border: 1px solid rgb(000, 255, 240);
     box-shadow: 0px 0px 10px 0px rgba(0, 255, 238, 0.100);
-}
-
-div.cardButton::after {
-    height: 0;
-    width: 125px;
-    content:"";
-    position: absolute;
-    border-top: transparent 30px;
-    border-right: solid 2px #000;
 }
 
 div.cardButton:hover, div.cardButton p:hover {
