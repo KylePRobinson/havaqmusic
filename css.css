@@ -26,7 +26,7 @@ div.image-header-icon {
 
 div.image-header-icon img {
     margin: 0 auto;
-    max-width: 20em;
+    max-width: 10em;
 }
 
 ul.link-list-vertical {
@@ -48,13 +48,7 @@ ul.link-list-vertical a {
 }
 
 li.link-list-item {
-    border: 1px solid var(--havaqred);
-    border-left-color: black;
-    border-left-style: inset;
-    border-left-width: 1em;
-    border-right-color: black;
-    border-right-style: inset;
-    border-right-width: 1em;
+    border-top: 1px solid var(--havaqred);
     border-bottom-style: hidden;
     background-color: black;
     max-width: 50em;
