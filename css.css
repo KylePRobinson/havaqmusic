@@ -1,0 +1,73 @@
+:root {
+    --havaqgreen: rgb(0, 255, 245);
+    --havaqblack: rgb(0, 0, 0);
+    --havaqred: rgb(255, 0, 55);
+}
+
+body {
+    background-color: var(--havaqblack);
+}
+
+p, a {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+div.image-header-icon {
+    display: flex;
+    justify-content: center;
+}
+
+div.image-header-icon img {
+    margin: 0 auto;
+    max-width: 20em;
+}
+
+ul.link-list-vertical {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 50em;
+}
+
+ul.link-list-vertical a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 8px;
+}
+
+li.link-list-item {
+    border: 1px solid var(--havaqred);
+    border-left-color: black;
+    border-left-style: inset;
+    border-left-width: 1em;
+    border-right-color: black;
+    border-right-style: inset;
+    border-right-width: 1em;
+    border-bottom-style: hidden;
+    background-color: black;
+    max-width: 50em;
+}
+
+p.badge-pill {
+    margin: 0 auto;
+    padding: .5em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    max-width: 25em;
+    border: 1px solid var(--havaqred);
+    border-radius: 2em;
+    font-size: 1.2em;
+}
