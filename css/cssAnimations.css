@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Red+Hat+Display&family=Tomorrow&display=swap');
+
+/* 
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Tomorrow', sans-serif; 
+*/
+
+
+@keyframes glitch {
+    0%  {
+        text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
+    }
+    25% {
+        text-shadow: 1px 0px 0px var(--havaqRedGlitch), -1px 0px 0px var(--havaqBlueGlitch);
+    }
+    50% {
+        text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
+    }
+    75% {
+        text-shadow: -1px 0px 0px var(--havaqRedGlitch), 1px 0px 0px var(--havaqBlueGlitch);
+    }
+    100%{
+        text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
+    }
+}
+
+@keyframes glitch-hover {
+    0% {
+        text-shadow: 1px 0px 0px var(--havaqRed), -1px 0px 0px var(--havaqBlue);
+    }
+    25% {}
+    50% {}
+    75% {}
+    100% {
+        text-shadow: -1px 0px 0px var(--havaqRed), 1px 0px 0px var(--havaqBlue);
+    }
+
+}
