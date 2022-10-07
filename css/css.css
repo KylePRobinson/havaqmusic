@@ -22,6 +22,8 @@ background-size: 8px 8px;
     --havaqRedGlitch: rgba(255, 0, 55, 0.500);
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
     --havaqRedGlow: rgba(255, 0, 55, 0.700);
+    --havaqBorderWhite: 4px solid white;
+    --havaqOutlineWhite: 4px solid white;
 }
 
 body {
@@ -64,7 +66,7 @@ div.hq-container {
     min-height: 100%;
     text-align: center;
     background-color: #000000;
-    border: 1px solid white;
+    border: var(--havaqBorderWhite);
     position: relative;
     box-sizing: border-box;
     overflow-x: hidden;
