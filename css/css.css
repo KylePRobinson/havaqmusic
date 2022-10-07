@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Red+Hat+Display&family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Share+Tech+Mono&family=Silkscreen&family=Source+Code+Pro&family=Tomorrow&display=swap');
 
 /* 
-font-family: 'Red Hat Display', sans-serif;
-font-family: 'Tomorrow', sans-serif; 
 font-family: 'Play', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Silkscreen', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Tomorrow', sans-serif;
 */
 
 /*
@@ -24,17 +26,22 @@ background-size: 8px 8px;
 
 body {
     background-color: #000000;
-    background-image: radial-gradient(#ffffff 0.4px, #000000 0.4px);
-    background-size: 10px 10px;
+    /*background-image: radial-gradient(rgba(255, 255, 255, 0.5) 0.4px, #000000 0.4px);
+    background-size: 10px 10px;*/
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    height: 100vh;
 }
 
-p, a {
+p {
     font-family: 'Tomorrow', sans-serif;
-    font-size: 1em;
     color: var(--havaqRed);
+}
+
+hr { 
+    width: 50%;
+    margin-top: -8px;
+    margin-bottom: -8px;
 }
 
 h1 {
@@ -42,15 +49,26 @@ h1 {
     color: var(--havaqRed);
 }
 
+p.hq-bible-verse {
+    margin: 1vh;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: .8em;
+    color: white;
+}
+
 div.hq-container {
     display: block;
-    margin: 0 auto;
-    width: 70%;
-    height: 100%;
+    margin: 0;
+    height: 100vh;
+    min-height: 100%;
     text-align: center;
     background-color: #000000;
-    outline: 1px solid white;
+    border: 1px solid white;
     position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 div.hq-logo-text {
@@ -65,32 +83,17 @@ img.hq-logo {
 }
 
 img.hq-album {
-    max-height: 600px;
-}
-
-div.hq-container-center {
-    margin: auto;
-    padding: 40px;
-
-}
-
-div.hq-bottom-container {
-    position: absolute;
-    bottom: 0;
-    float: left;
-    width: 100%;
-}
-
-p.hq-bible-verse {
-    font-family: 'Play', sans-serif;
-    color: white;
+    max-height: 40em;
+    min-height: 10em;
+    margin: 2em;
 }
 
 p.hq-center-text {
-    float: left;
     width: 100%;
-    color: var(--havaqRed);
+    color: white;
     font-weight: bold;
     font-size: 3em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    margin: 0;
+    padding: 0;
 }

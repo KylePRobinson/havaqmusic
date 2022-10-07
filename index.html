@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="js/head.js"></script>
+<head><script type="text/javascript" src="js/head.js"></script></head>
 <body>
     <div class="hq-container">
-        <div id='nav' onload='loadNav()'></div>
-        
-        <div class="hq-container-center" id="album-info">
-            <img class="hq-album" src="https://cdn.shopify.com/s/files/1/0018/9890/5651/products/Candle_shopify_DN_1800x1800.jpg?v=1616446223">
-            <p class="hq-center-text">out now on all platforms</p>
-        </div>
-        <div class="hq-bottom-container">
-            <p class="hq-bible-verse">// <b>Hebrews 11:3</b> //<br>
-                By faith we understand that the worlds were framed by the word of God,<br>
-                so that the things which are seen were not made of things which are visible.</p>
+        <!-- #nav -->
+        <nav>
+            <ul class="hq-nav">
+                <li class="hq-dummy-block"></li>
+                <li class="hq-nav-button" id="homeBtn"><p>home</p></li>
+                <li class="hq-nav-button" id="musicBtn"><p>music</p></li>
+                <li class="hq-nav-button" id="aboutBtn"><p>about</p></li>
+                <li class="hq-nav-button" id="contactBtn"><p>contact</p></li>
+                <li class="hq-dummy-block"></li>
+            </ul>
+        </nav>
+        <!-- #home -->
+        <section id="secHome">
+            <div>
+                <img class="hq-album" src="https://cdn.shopify.com/s/files/1/0018/9890/5651/products/Candle_shopify_DN_1800x1800.jpg?v=1616446223">
+                <p class="hq-center-text">Out Now On All Platforms</p>
+            </div>
+        </section>
+        <!-- #music -->
+        <section id="secMusic">
+            <div>
+                <ul class="hq-nav-list">
+                    <li class="hq-nav-list-item"><a href="https://havaqmusic.bandcamp.com">Bandcamp</a></li>
+                    <li class="hq-nav-list-item"><a href="https://open.spotify.com/artist/0g9LwZI5kFm5KWRnW2UR3X?si=3jjA2A3IRgeubuXbFYOMgw">Spotify</a></li>
+                    <li class="hq-nav-list-item"><a href="https://music.apple.com/us/artist/havaq/1496718434">Apple Music</a></li>
+                    <li class="hq-nav-list-item"><a href="https://music.amazon.com/artists/B084H5NCR6/havaq?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_yShylvNXYHJbthUUcGauyerel">Amazon Music</a></li>
+                    <li class="hq-nav-list-item"><a href="https://twitter.com/HavaqMusic">Twitter</a></li>
+                    <li class="hq-nav-list-item"><a></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- #about -->
+        <section id="secAbout">
+
+        </section>
+        <!-- #contact -->
+        <section id="secContact">
+
+        </section>
+        <div class="hq-footer">
+            <p class="hq-bible-verse">// <b>Hebrews 11:3</b> //<br></p>
+            <hr/>
+            <p class="hq-bible-verse"><i>By faith we understand that the worlds were framed by the word of God,<br>
+                so that the things which are seen were not made of things which are visible.</i>
+            </p>
         </div>
     </div>
-
+    <footer>
+    </footer>
     <!--
     <div class="hq-container">
         <div class="hq-grid-item-nav">
@@ -53,5 +89,4 @@
     </div>
     -->
 </body>
-
 </html>
