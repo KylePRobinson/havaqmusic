@@ -10,14 +10,17 @@ font-family: 'Tomorrow', sans-serif;
     0%  {
         text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
     }
-    25% {
-        text-shadow: 1px 0px 0px var(--havaqRedGlitch), -1px 0px 0px var(--havaqBlueGlitch);
+    2% {
+        text-shadow: 3px 0px 0px var(--havaqRedGlitch), -3px 0px 0px var(--havaqBlueGlitch);
     }
-    50% {
+    20% {
         text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
     }
-    75% {
-        text-shadow: -1px 0px 0px var(--havaqRedGlitch), 1px 0px 0px var(--havaqBlueGlitch);
+    80% {
+        text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
+    }
+    98% {
+        text-shadow: -3px 0px 0px var(--havaqRedGlitch), 3px 0px 0px var(--havaqBlueGlitch);
     }
     100%{
         text-shadow: 0px 0px 0px var(--havaqRedGlitch), 0px 0px 0px var(--havaqBlueGlitch);
@@ -26,13 +29,13 @@ font-family: 'Tomorrow', sans-serif;
 
 @keyframes glitch-hover {
     0% {
-        text-shadow: 1px 0px 0px var(--havaqRed), -1px 0px 0px var(--havaqBlue);
+        text-shadow: 3px 0px 0px var(--havaqRed), -3px 0px 0px var(--havaqBlue);
     }
     25% {}
     50% {}
     75% {}
     100% {
-        text-shadow: -1px 0px 0px var(--havaqRed), 1px 0px 0px var(--havaqBlue);
+        text-shadow: -3px 0px 0px var(--havaqRed), 3px 0px 0px var(--havaqBlue);
     }
 
 }

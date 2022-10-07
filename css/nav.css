@@ -45,13 +45,13 @@ li.hq-nav-button p {
     font-size: 1.2em;
     margin: 0;
     padding: 10px 20px;
-    animation: glitch .5s infinite;
+    animation: glitch 2s infinite;
 }
 
 li.hq-nav-button p:hover {
     color: black;
     transition-duration: 0.2s;
-    animation: glitch-hover 4s infinite;
+    animation: glitch-hover 1s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
 }
