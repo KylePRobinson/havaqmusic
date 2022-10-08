@@ -1,0 +1,45 @@
+ul.hq-music-links {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 70%;
+    background-color: black;
+    outline: var(--havaqOutlineWhite);
+}
+
+li.hq-music-item {
+    flex-grow: 2;
+    background-color: black;
+    outline: var(--havaqOutlineWhite);
+}
+
+li.hq-music-item:hover {
+    background-color: white;
+    outline: var(--havaqOutlineWhite);
+}
+
+li.hq-music-item a {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    color: var(--havaqRed);
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 20px;
+    animation: glitch 2s infinite;
+}
+
+li.hq-music-item a:hover {
+    color: black;
+    transition-duration: 0.2s;
+    animation: glitch-hover 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}

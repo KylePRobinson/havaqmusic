@@ -84,12 +84,6 @@ img.hq-logo {
     filter: drop-shadow(0px 0px 10px var(--havaqRedGlow))
 }
 
-img.hq-album {
-    max-height: 40em;
-    min-height: 10em;
-    margin: 2em;
-}
-
 p.hq-center-text {
     width: 100%;
     color: white;

@@ -8,6 +8,10 @@ document.write(`
         <link rel='stylesheet' type='text/css' href='css/css.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/footer.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/nav.css?v=1'>
+        <link rel='stylesheet' type='text/css' href='css/home.css?v=1'>
+        <link rel='stylesheet' type='text/css' href='css/music.css?v=1'>
+        <link rel='stylesheet' type='text/css' href='css/about.css?v=1'>
+        <link rel='stylesheet' type='text/css' href='css/contact.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/queries.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/sections.css?v=1'>
         <script type="text/javascript" src="js/js.js"></script>
