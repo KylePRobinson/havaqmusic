@@ -17,19 +17,20 @@ background-size: 8px 8px;
 
 :root {
     --havaqBlue: rgb(0, 179, 255);
-    --havaqBlack: rgb(26, 37, 46);
+    --havaqBlack: rgb(0, 7, 16);
     --havaqRed: rgb(255, 0, 55);
+    --havaqWhite: rgb(220, 255, 240);
     --havaqRedGlitch: rgba(255, 0, 55, 0.500);
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
     --havaqRedGlow: rgba(255, 0, 55, 0.700);
-    --havaqBorderWhite: 4px solid white;
-    --havaqOutlineWhite: 4px solid white;
+    --havaqBorderWhite: 1px solid var(--havaqWhite);
+    --havaqOutlineWhite: 1px solid var(--havaqWhite);
 }
 
 body {
-    background-color: #000000;
-    /*background-image: radial-gradient(rgba(255, 255, 255, 0.5) 0.4px, #000000 0.4px);
-    background-size: 10px 10px;*/
+    background-image: radial-gradient(rgba(255, 255, 255, 0.35) .5px, transparent .5px);
+    background-size: 8px 8px;
+    background-color: var(--havaqBlack);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -56,7 +57,7 @@ p.hq-bible-verse {
     text-align: center;
     font-family: 'Silkscreen', cursive;
     font-size: .8em;
-    color: white;
+    color: var(--havaqWhite);
 }
 
 div.hq-container {
@@ -65,7 +66,7 @@ div.hq-container {
     height: 100vh;
     min-height: 100%;
     text-align: center;
-    background-color: #000000;
+    /*background-color: #000000;*/
     border: var(--havaqBorderWhite);
     position: relative;
     box-sizing: border-box;
@@ -85,11 +86,25 @@ img.hq-logo {
 }
 
 p.hq-center-text {
+    text-align: center;
     width: 100%;
-    color: white;
+    color: var(--havaqWhite);
     font-weight: bold;
     font-size: 3em;
     /*text-transform: uppercase;*/
     margin: 0;
     padding: 0;
+}
+
+div.hq-card {
+    margin: auto;
+    max-width: 35em;
+    padding: 2em;
+    background-color: var(--havaqBlack);
+    border: var(--havaqBorderWhite);
+}
+
+#about p{
+    font-size: 18px;
+    color: var(--havaqWhite);
 }

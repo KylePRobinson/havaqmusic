@@ -29,29 +29,32 @@ window.onload = function() {
     function toggleSectionVisibility(clicked) {
         switch(clicked) {
             case 'home':
-                homeSection.style.visibility    = 'visible';
-                musicSection.style.visibility   = 'hidden';
-                aboutSection.style.visibility   = 'hidden';
-                contactSection.style.visibility = 'hidden';
+                hideSection([musicSection, aboutSection, contactSection]);
+                showSection(homeSection);
                 break;
             case 'music':
-                homeSection.style.visibility    = 'hidden';
-                musicSection.style.visibility   = 'visible';
-                aboutSection.style.visibility   = 'hidden';
-                contactSection.style.visibility = 'hidden';
+                hideSection([homeSection, aboutSection, contactSection]);
+                showSection(musicSection);
                 break;
             case 'about':
-                homeSection.style.visibility    = 'hidden';
-                musicSection.style.visibility   = 'hidden';
-                aboutSection.style.visibility   = 'visible';
-                contactSection.style.visibility = 'hidden';
+                hideSection([musicSection, homeSection, contactSection]);
+                showSection(aboutSection);
                 break;
             case 'contact':
-                homeSection.style.visibility    = 'hidden';
-                musicSection.style.visibility   = 'hidden';
-                aboutSection.style.visibility   = 'hidden';
-                contactSection.style.visibility = 'visible';
+                hideSection([musicSection, aboutSection, homeSection]);
+                showSection(contactSection);
                 break;
         }
+    }
+
+    function hideSection(sections) {
+        for(i = 0; i < sections.length; i++) {
+            sections[i].style.visibility    = 'hidden';
+            sections[i].style.height        = '0px';
+        }
+    }
+
+    function showSection(section) {
+        section.style.visibility    = 'visible';
     }
 }

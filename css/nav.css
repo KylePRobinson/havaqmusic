@@ -27,7 +27,7 @@ li.hq-nav-button {
 }
 
 li.hq-nav-button:hover {
-    background-color: white;
+    background-color: var(--havaqWhite);
     outline: var(--havaqOutlineWhite);
 }
 
@@ -41,7 +41,7 @@ li.hq-nav-button p {
     /*text-transform: uppercase;*/
     text-align: center;
     letter-spacing: 2px;
-    color: white;
+    color: var(--havaqWhite);
     font-size: 1.2em;
     margin: 0;
     padding: 10px 20px;

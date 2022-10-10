@@ -1,7 +1,9 @@
 ul.hq-music-links {
+    display: block;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
+    margin: auto;
+    margin-top: 2em;
     padding: 0;
     max-width: 70%;
     background-color: black;
@@ -15,13 +17,12 @@ li.hq-music-item {
 }
 
 li.hq-music-item:hover {
-    background-color: white;
+    background-color: var(--havaqWhite);
     outline: var(--havaqOutlineWhite);
 }
 
 li.hq-music-item a {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1em;
     color: var(--havaqRed);
     display: block;
     font-weight: bold;
@@ -29,9 +30,9 @@ li.hq-music-item a {
     /*text-transform: uppercase;*/
     text-align: center;
     letter-spacing: 2px;
-    color: white;
-    font-size: 1.2em;
-    margin: 0;
+    color: var(--havaqWhite);
+    font-size: 4em;
+    margin-top: 4px;
     padding: 10px 20px;
     animation: glitch 2s infinite;
 }
