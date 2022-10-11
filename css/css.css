@@ -24,7 +24,11 @@ background-size: 8px 8px;
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
     --havaqRedGlow: rgba(255, 0, 55, 0.700);
     --havaqBorderWhite: 1px solid var(--havaqWhite);
+    --havaqBorderWhiteThick: 4px solid var(--havaqWhite);
+    --havaqBorderWhiteThicker: 8px solid var(--havaqWhite);
     --havaqOutlineWhite: 1px solid var(--havaqWhite);
+    --transparentBlackHalf: rgb(0, 7, 16, .5);
+    --transparentBlackFull: rgb(0, 7, 16, 0);
 }
 
 body {
@@ -100,16 +104,23 @@ div.hq-card {
     margin: auto;
     max-width: 35em;
     padding: 2em;
-    background-color: var(--havaqBlack);
+    background: linear-gradient(to bottom right, var(--transparentBlackHalf), var(--transparentBlackHalf) 96%, var(--havaqWhite) 50%, var(--havaqWhite) 100%);
     border: var(--havaqBorderWhite);
+    border-left: var(--havaqBorderWhiteThicker);
 }
 
 div.hq-card::after {
-    width: 0;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 1190px;
+    top: 549px;
     height: 0;
-    border-style: solid;
-    border-width: 5px 0px 5px 10px;
-    border-color: transparent transparent transparent var(--havaqWhite);
+    width: 0;
+    margin-right: 10px;
+	border-bottom: 0px solid transparent;
+    border-right: 15px solid var(--havaqWhite);
+    border-top: 15px solid transparent;
 }
 
 #about p{
