@@ -103,13 +103,14 @@ p.hq-center-text {
 div.hq-card {
     margin: auto;
     max-width: 35em;
-    padding: 2em;
-    background: linear-gradient(to bottom right, var(--transparentBlackHalf), var(--transparentBlackHalf) 96%, var(--havaqWhite) 50%, var(--havaqWhite) 100%);
+    padding: 4em;
+    background: linear-gradient(to bottom right, var(--transparentBlackHalf), var(--transparentBlackHalf) 95%, var(--havaqWhite) 0%, var(--havaqWhite) 100%);
     border: var(--havaqBorderWhite);
     border-left: var(--havaqBorderWhiteThicker);
+    box-shadow: 0px 0px 45px -18px var(--havaqWhite);
 }
 
-div.hq-card::after {
+/*div.hq-card::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -121,7 +122,7 @@ div.hq-card::after {
 	border-bottom: 0px solid transparent;
     border-right: 15px solid var(--havaqWhite);
     border-top: 15px solid transparent;
-}
+}*/
 
 #about p{
     font-size: 18px;
