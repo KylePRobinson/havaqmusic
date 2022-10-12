@@ -91,10 +91,9 @@ img.hq-logo {
 
 p.hq-center-text {
     text-align: center;
-    width: 100%;
     color: var(--havaqWhite);
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
     /*text-transform: uppercase;*/
     margin: 0;
     padding: 0;
@@ -102,8 +101,9 @@ p.hq-center-text {
 
 div.hq-card {
     margin: auto;
-    max-width: 35em;
-    padding: 4em;
+    margin-top: 5%;
+    max-width: 55em;
+    padding: 2em;
     background: linear-gradient(to bottom right, var(--transparentBlackHalf), var(--transparentBlackHalf) 95%, var(--havaqWhite) 0%, var(--havaqWhite) 100%);
     border: var(--havaqBorderWhite);
     border-left: var(--havaqBorderWhiteThicker);
