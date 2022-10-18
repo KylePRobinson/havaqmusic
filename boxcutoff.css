@@ -1,8 +1,0 @@
-.rules__lists-column-title:before {
- border-right:12px solid transparent;
- border-top:12px solid #fcee0a;
- content:"";
- left:-1px;
- position:absolute;
- top:-1px
-}

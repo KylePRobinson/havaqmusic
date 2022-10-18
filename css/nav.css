@@ -7,6 +7,7 @@ ul.hq-nav {
     overflow: hidden;
     background-color: black;
     outline: var(--havaqOutlineWhite);
+    word-wrap: normal;
 }
 
 li.hq-dummy-block {
@@ -22,9 +23,9 @@ li.hq-nav-button {
 
 li.hq-nav-button:hover {
     background-color: var(--havaqWhite);
-    outline: var(--havaqOutlineWhite);
 }
 
+/*
 li.hq-nav-button p:hover::before {
     content: "";
     display: inline-block;
@@ -38,22 +39,10 @@ li.hq-nav-button p:hover::before {
     border-left: 15px solid var(--havaqBlack);
     border-top: 10px solid transparent;
 }
+*/
 
 li.hq-nav-button p {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1em;
-    color: var(--havaqRed);
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
-    /*text-transform: uppercase;*/
-    text-align: center;
-    letter-spacing: 2px;
-    color: var(--havaqWhite);
-    font-size: 1.2em;
-    margin: 0;
-    padding: 10px 20px;
-    animation: glitch 2s infinite;
+    margin-left: -10px;
 }
 
 li.hq-nav-button p:hover {
@@ -62,4 +51,26 @@ li.hq-nav-button p:hover {
     animation: glitch-hover 1s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
+}
+
+li.hq-nav-button span:hover {
+    color: black;
+}
+
+span.nav-text {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 20px;
+    animation: glitch 2s infinite;
+}
+
+span.triangle {
+    color: var(--havaqBlack);
 }

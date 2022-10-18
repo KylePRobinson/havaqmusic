@@ -18,15 +18,16 @@ background-size: 8px 8px;
 :root {
     --havaqBlue: rgb(0, 179, 255);
     --havaqBlack: rgb(0, 7, 16);
-    --havaqRed: rgb(255, 0, 55);
+    --havaqRed: rgb(255, 0, 50);
     --havaqWhite: rgb(220, 255, 240);
     --havaqRedGlitch: rgba(255, 0, 55, 0.500);
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
-    --havaqRedGlow: rgba(255, 0, 55, 0.700);
+    --havaqRedGlow: rgba(255, 0, 50, 0.900);
     --havaqBorderWhite: 1px solid var(--havaqWhite);
     --havaqBorderWhiteThick: 4px solid var(--havaqWhite);
     --havaqBorderWhiteThicker: 8px solid var(--havaqWhite);
     --havaqOutlineWhite: 1px solid var(--havaqWhite);
+    --havaqOutlineBlack: 2px solid var(--havaqBlack);
     --transparentBlackHalf: rgb(0, 7, 16, .5);
     --transparentBlackFull: rgb(0, 7, 16, 0);
 }
@@ -99,30 +100,27 @@ p.hq-center-text {
     padding: 0;
 }
 
+
 div.hq-card {
+    display: block;
+    position: relative;
     margin: auto;
     margin-top: 5%;
     max-width: 55em;
     padding: 2em;
-    background: linear-gradient(to bottom right, var(--transparentBlackHalf), var(--transparentBlackHalf) 95%, var(--havaqWhite) 0%, var(--havaqWhite) 100%);
     border: var(--havaqBorderWhite);
     border-left: var(--havaqBorderWhiteThicker);
     box-shadow: 0px 0px 45px -18px var(--havaqWhite);
 }
 
-/*div.hq-card::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 1190px;
-    top: 549px;
-    height: 0;
-    width: 0;
-    margin-right: 10px;
-	border-bottom: 0px solid transparent;
-    border-right: 15px solid var(--havaqWhite);
-    border-top: 15px solid transparent;
-}*/
+div.hq-card::before {
+    border-left:50px solid transparent;
+    border-bottom:50px solid var(--havaqWhite);
+    content:"";
+    left:894px;
+    position:absolute;
+    top:568px;
+}
 
 #about p{
     font-size: 18px;
