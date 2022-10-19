@@ -100,8 +100,15 @@ p.hq-center-text {
     padding: 0;
 }
 
-
 div.hq-card {
+    margin: auto;
+    margin-top: 5%;
+    background-image: url(/images/hqCardBackground.svg);
+    border: var(--havaqBorderWhite);
+}
+
+
+/*div.hq-card {
     display: block;
     position: relative;
     margin: auto;
@@ -120,7 +127,7 @@ div.hq-card::before {
     left:894px;
     position:absolute;
     top:568px;
-}
+}*/
 
 #about p{
     font-size: 18px;
