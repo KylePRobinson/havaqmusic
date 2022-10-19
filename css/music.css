@@ -4,7 +4,6 @@ ul.hq-music-links {
     list-style-type: none;
     margin: auto;
     padding: 0;
-    max-width: 70%;
     background-color: black;
     outline: var(--havaqOutlineWhite);
 }
