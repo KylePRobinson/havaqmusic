@@ -101,10 +101,13 @@ p.hq-center-text {
 }
 
 div.hq-card {
+    display: inline-block;
     margin: auto;
-    margin-top: 5%;
-    background-image: url(/images/hqCardBackground.svg);
-    border: var(--havaqBorderWhite);
+    margin-top: 2vh;
+    padding: 8em;
+    background-image: url(../images/hqCardBackground.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
