@@ -86,7 +86,6 @@ div.hq-logo-text {
 
 img.hq-logo {
     height: 200px;
-    margin: -30px;
     filter: drop-shadow(0px 0px 10px var(--havaqRedGlow))
 }
 
@@ -94,7 +93,7 @@ p.hq-center-text {
     text-align: center;
     color: var(--havaqWhite);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     /*text-transform: uppercase;*/
     margin: 0;
     padding: 0;
@@ -102,12 +101,13 @@ p.hq-center-text {
 
 div.hq-card {
     display: inline-block;
-    margin: auto;
     margin-top: 2vh;
-    padding: 8em;
+    padding: 6em;
     background-image: url(../images/hqCardBackground.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    width: 40em;
+    height: 40em;
 }
 
 
@@ -133,6 +133,7 @@ div.hq-card::before {
 }*/
 
 #about p{
-    font-size: 18px;
+    margin: auto;
+    font-size: 22px;
     color: var(--havaqWhite);
 }
