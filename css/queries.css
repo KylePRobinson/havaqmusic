@@ -4,8 +4,8 @@
         visibility: show;
         margin-top: 2vh;
         padding: 4em;
-        width: 25em;
-        height: 25em;
+        width: 20em;
+        height: 20em;
     }
 
     div.hq-div-nav {
@@ -32,6 +32,10 @@
         visibility: hidden;
         height: 0px;
     }
+
+    div.hq-div-nav-mini {
+        visibility: visible;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -47,6 +51,10 @@
     div.hq-div-nav {
         visibility: hidden;
         height: 0px;
+    }
+
+    div.hq-div-nav-mini {
+        visibility: visible;
     }
 } 
 
