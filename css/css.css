@@ -18,7 +18,7 @@ background-size: 8px 8px;
 :root {
     --havaqBlue: rgb(0, 179, 255);
     --havaqBlack: rgb(0, 7, 16);
-    --havaqRed: rgb(255, 0, 50);
+    --havaqRed: rgb(255, 0, 70);
     --havaqWhite: rgb(220, 255, 240);
     --havaqRedGlitch: rgba(255, 0, 55, 0.500);
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
@@ -27,6 +27,7 @@ background-size: 8px 8px;
     --havaqBorderWhiteThick: 4px solid var(--havaqWhite);
     --havaqBorderWhiteThicker: 8px solid var(--havaqWhite);
     --havaqOutlineWhite: 1px solid var(--havaqWhite);
+    --havaqOutlineWhiteThick: 4px solid var(--havaqWhite);
     --havaqOutlineBlack: 2px solid var(--havaqBlack);
     --transparentBlackHalf: rgb(0, 7, 16, .5);
     --transparentBlackFull: rgb(0, 7, 16, 0);
@@ -108,6 +109,10 @@ div.hq-card {
     background-repeat: no-repeat;
     width: 40em;
     height: 40em;
+}
+
+div.hq-card-hidden {
+    visibility: hidden;
 }
 
 

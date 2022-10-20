@@ -8,6 +8,7 @@ document.write(`
         <link rel='stylesheet' type='text/css' href='css/css.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/footer.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/nav.css?v=1'>
+        <link rel='stylesheet' type='text/css' href='css/navmini.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/home.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/music.css?v=1'>
         <link rel='stylesheet' type='text/css' href='css/about.css?v=1'>

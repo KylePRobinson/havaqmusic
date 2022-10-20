@@ -1,13 +1,14 @@
 ul.hq-nav {
+    visibility: show;
     display: flex;
     justify-content: center;
     margin: auto;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: black;
-    outline: var(--havaqOutlineWhite);
     word-wrap: normal;
+    background-color: var(--havaqBlack);
+    outline: var(--havaqOutlineWhite);
 }
 
 li.hq-dummy-block {
@@ -17,8 +18,15 @@ li.hq-dummy-block {
 li.hq-nav-button {
     float: left;
     flex-grow: 2;
-    background-color: black;
+    background-color: var(--havaqBlack);
     outline: var(--havaqOutlineWhite);
+    transition: 500ms;
+}
+
+li.hq-nav-button-active {
+    float: left;
+    flex-grow: 2;
+    background-color: var(--havaqWhite);
 }
 
 li.hq-nav-button:hover {
