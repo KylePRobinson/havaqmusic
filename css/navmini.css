@@ -4,6 +4,7 @@ div.hq-div-nav-mini {
     background-color: var(--havaqBlack);
     outline: var(--havaqOutlineWhite);
     position: relative;
+    height: 8vh;
 }
 
 div.hq-div-nav-mini p {
@@ -26,7 +27,8 @@ div.hq-nav-mini-button {
     display: block;
     float: right;
     background-color: var(--havaqWhite);
-    max-width: 6em;
+    width: 10vh;
+    height: 100%;
 }
 
 div.hq-nav-mini-button:hover {
