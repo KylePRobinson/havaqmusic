@@ -22,7 +22,7 @@ background-size: 8px 8px;
     --havaqWhite: rgb(220, 255, 240);
     --havaqRedGlitch: rgba(255, 0, 55, 0.500);
     --havaqBlueGlitch: rgba(0, 179, 255, 0.500);
-    --havaqRedGlow: rgba(255, 0, 50, 0.900);
+    --havaqRedGlow: drop-shadow(0px 0px 8px rgba(255, 0, 70, 0.900));
     --havaqBorderWhite: 1px solid var(--havaqWhite);
     --havaqBorderWhiteThick: 4px solid var(--havaqWhite);
     --havaqBorderWhiteThicker: 8px solid var(--havaqWhite);
@@ -34,7 +34,7 @@ background-size: 8px 8px;
 }
 
 body {
-    background-image: radial-gradient(rgba(255, 255, 255, 0.35) .5px, transparent .5px);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.25) .5px, transparent .5px);
     background-size: 8px 8px;
     background-color: var(--havaqBlack);
     height: 100%;
@@ -43,7 +43,7 @@ body {
 }
 
 p {
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Play', sans-serif;
     color: var(--havaqRed);
 }
 
@@ -74,6 +74,7 @@ div.hq-container {
     text-align: center;
     /*background-color: #000000;*/
     border: var(--havaqBorderWhite);
+    background-image: url(../images/backgroundTexture1.svg);
     position: relative;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -87,7 +88,7 @@ div.hq-logo-text {
 
 img.hq-logo {
     height: 200px;
-    filter: drop-shadow(0px 0px 10px var(--havaqRedGlow))
+    filter: var(--havaqRedGlow);
 }
 
 p.hq-center-text {
@@ -116,30 +117,8 @@ div.hq-card-hidden {
     visibility: hidden;
 }
 
-
-/*div.hq-card {
-    display: block;
-    position: relative;
-    margin: auto;
-    margin-top: 5%;
-    max-width: 55em;
-    padding: 2em;
-    border: var(--havaqBorderWhite);
-    border-left: var(--havaqBorderWhiteThicker);
-    box-shadow: 0px 0px 45px -18px var(--havaqWhite);
-}
-
-div.hq-card::before {
-    border-left:50px solid transparent;
-    border-bottom:50px solid var(--havaqWhite);
-    content:"";
-    left:894px;
-    position:absolute;
-    top:568px;
-}*/
-
 #about p{
     margin: auto;
-    font-size: 22px;
+    font-size: 18px;
     color: var(--havaqWhite);
 }

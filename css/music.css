@@ -1,44 +1,24 @@
-ul.hq-music-links {
+div.hq-music-links {
     display: block;
-    justify-content: center;
-    list-style-type: none;
-    margin: auto;
     padding: 0;
     background-color: black;
     outline: var(--havaqOutlineWhite);
+    height: 100%;
+    width: 100%;
 }
 
-li.hq-music-item {
-    flex-grow: 2;
+div.hq-music-item {
     background-color: black;
     outline: var(--havaqOutlineWhite);
+    width: 200px;
+    height: 200px;
 }
 
-li.hq-music-item:hover {
-    background-color: var(--havaqWhite);
+div.hq-music-item:hover {
+    background-color: var(--havaqRed);
     outline: var(--havaqOutlineWhite);
 }
 
-li.hq-music-item a {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--havaqRed);
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
-    /*text-transform: uppercase;*/
-    text-align: center;
-    letter-spacing: 2px;
-    color: var(--havaqWhite);
-    font-size: 4em;
-    margin-top: 4px;
-    padding: 10px 20px;
-    animation: glitch 2s infinite;
-}
-
-li.hq-music-item a:hover {
-    color: black;
-    transition-duration: 0.2s;
-    animation: glitch-hover 1s infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
+div.hq-music-item img {
+    max-width: 200px;
 }

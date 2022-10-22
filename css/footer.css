@@ -6,4 +6,7 @@ div.hq-footer {
     text-align: center;
     width: 100%;
     bottom: 0%;
+    outline: var(--havaqOutlineWhite);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
