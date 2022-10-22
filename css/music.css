@@ -1,24 +1,27 @@
-div.hq-music-links {
-    display: block;
-    padding: 0;
-    background-color: black;
-    outline: var(--havaqOutlineWhite);
-    height: 100%;
-    width: 100%;
+.hq-links {
+    margin: auto;
 }
 
-div.hq-music-item {
+.hq-links-item {
+    display: inline-block;
     background-color: black;
     outline: var(--havaqOutlineWhite);
     width: 200px;
     height: 200px;
+    padding: 0;
+    margin: -2px;
+    transition: 200ms;
+    overflow: hidden;
 }
 
-div.hq-music-item:hover {
+.hq-links-item:hover {
     background-color: var(--havaqRed);
     outline: var(--havaqOutlineWhite);
 }
 
-div.hq-music-item img {
-    max-width: 200px;
+.hq-links-item img {
+    position: relative;
+    top: 10%;
+    width: 10em;
+    overflow: hidden;
 }

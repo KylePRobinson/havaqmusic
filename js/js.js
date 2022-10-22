@@ -2,24 +2,24 @@
 window.onload = function() {
     // Get Buttons to add Click event
     const homeBtn       = document.getElementById('homeBtn');
-    const musicBtn      = document.getElementById('musicBtn');
+    const linksBtn      = document.getElementById('linksBtn');
     const aboutBtn      = document.getElementById('aboutBtn');
     const contactBtn    = document.getElementById('contactBtn');
 
     // Get Div elements to show/hide
     const homeSection       = document.getElementById('secHome');
-    const musicSection      = document.getElementById('secMusic');
+    const linksSection      = document.getElementById('secLinks');
     const aboutSection      = document.getElementById('secAbout');
     const contactSection    = document.getElementById('secContact');
 
     /*const homeSection       = document.getElementById('home');
-    const musicSection      = document.getElementById('music');
+    const linksSection      = document.getElementById('links');
     const aboutSection      = document.getElementById('about');
     const contactSection    = document.getElementById('contact');*/
 
     // Set section visibility for first time load
     homeSection.style.visibility    = 'visible';
-    musicSection.style.visibility   = 'hidden';
+    linksSection.style.visibility   = 'hidden';
     aboutSection.style.visibility   = 'hidden';
     contactSection.style.visibility = 'hidden';
 
@@ -29,7 +29,7 @@ window.onload = function() {
     //homeSection.style.visibility = 'visible';
 
     homeBtn.onclick     = function() {toggleSectionVisibility('home');};
-    musicBtn.onclick    = function() {toggleSectionVisibility('music');};
+    linksBtn.onclick    = function() {toggleSectionVisibility('links');};
     aboutBtn.onclick    = function() {toggleSectionVisibility('about');};
     contactBtn.onclick  = function() {toggleSectionVisibility('contact');};
 
@@ -37,27 +37,27 @@ window.onload = function() {
     function toggleSectionVisibility(clicked) {
         switch(clicked) {
             case 'home':
-                hideSection([musicSection, aboutSection, contactSection]);
+                hideSection([linksSection, aboutSection, contactSection]);
                 showSection(homeSection);
-                revertCSS([musicBtn, aboutBtn, contactBtn]);
+                revertCSS([linksBtn, aboutBtn, contactBtn]);
                 changeCSS(homeBtn);
                 break;
-            case 'music':
+            case 'links':
                 hideSection([homeSection, aboutSection, contactSection]);
-                showSection(musicSection);
+                showSection(linksSection);
                 revertCSS([homeBtn, aboutBtn, contactBtn]);
-                changeCSS(musicBtn);
+                changeCSS(linksBtn);
                 break;
             case 'about':
-                hideSection([musicSection, homeSection, contactSection]);
+                hideSection([linksSection, homeSection, contactSection]);
                 showSection(aboutSection);
-                revertCSS([musicBtn, homeBtn, contactBtn]);
+                revertCSS([linksBtn, homeBtn, contactBtn]);
                 changeCSS(aboutBtn);
                 break;
             case 'contact':
-                hideSection([musicSection, aboutSection, homeSection]);
+                hideSection([linksSection, aboutSection, homeSection]);
                 showSection(contactSection);
-                revertCSS([musicBtn, aboutBtn, homeBtn]);
+                revertCSS([linksBtn, aboutBtn, homeBtn]);
                 changeCSS(contactBtn);
                 break;
         }

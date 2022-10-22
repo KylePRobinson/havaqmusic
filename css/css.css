@@ -103,7 +103,7 @@ p.hq-center-text {
 
 div.hq-card {
     display: inline-block;
-    margin: 2px;
+    margin: auto;
     margin-top: 2vh;
     padding: 6em;
     background-image: url(../images/hqCardBackground.svg);
@@ -119,6 +119,6 @@ div.hq-card-hidden {
 
 #about p{
     margin: auto;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--havaqWhite);
 }
