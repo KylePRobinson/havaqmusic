@@ -5,13 +5,16 @@ div.hq-div-nav-mini {
     outline: var(--havaqOutlineWhite);
     position: relative;
     height: 8vh;
+    max-width: 100vw;
 }
 
 div.hq-div-nav-mini p {
     color: var(--havaqWhite);
-    margin: 0 auto;
-    padding: 1em;
+    margin: auto;
+    padding-left: 1em;
+    padding-top: 2.4vh;
     width: 100%;
+    height: 100%;
     font-size: 25px;
     text-align: left;
     text-decoration: none;
@@ -24,11 +27,12 @@ div.hq-div-nav-mini p:hover {
 }
 
 div.hq-nav-mini-button {
+    margin: auto;
     display: block;
     float: right;
     background-color: var(--havaqWhite);
-    width: 10vh;
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 div.hq-nav-mini-button:hover {
@@ -36,8 +40,8 @@ div.hq-nav-mini-button:hover {
 }
 
 div.hq-nav-mini-button img {
-    width: 100%;
-    height: 100%;
+    height: 8vh;
+    width: 16vw;
 }
 
 ul.hq-nav-mini {

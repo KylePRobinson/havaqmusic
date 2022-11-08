@@ -1,10 +1,15 @@
 // I hate this so much
 window.onload = function() {
-    // Get Buttons to add Click event
+    // Page Buttons
     const homeBtn       = document.getElementById('homeBtn');
     const linksBtn      = document.getElementById('linksBtn');
     const aboutBtn      = document.getElementById('aboutBtn');
     const contactBtn    = document.getElementById('contactBtn');
+    // Mini Nav Buttons
+    const homeBtnMini       = document.getElementById('homeBtnMini');
+    const linksBtnMini      = document.getElementById('linksBtnMini');
+    const aboutBtnMini      = document.getElementById('aboutBtnMini');
+    const contactBtnMini    = document.getElementById('contactBtnMini');
 
     // Get Div elements to show/hide
     const homeSection       = document.getElementById('secHome');
@@ -34,7 +39,7 @@ window.onload = function() {
     contactBtn.onclick  = function() {toggleSectionVisibility('contact');};
 
     // There's probably a better way to do this lol
-    function toggleSectionVisibility(clicked) {
+    const toggleSectionVisibility = (clicked) => {
         switch(clicked) {
             case 'home':
                 hideSection([linksSection, aboutSection, contactSection]);

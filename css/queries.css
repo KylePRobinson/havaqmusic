@@ -1,11 +1,17 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    body {
+        max-height: 100vh;
+        max-width: 100vw;
+        margin: 0;
+    }
+
     div.hq-card {
         visibility: show;
         margin-top: 2vh;
         padding: 6vh;
-        width: 38vh;
-        height: 38vh;
+        max-height: 90vh;
+        max-width: 90vw;
     }
 
     div.hq-div-nav {
@@ -16,16 +22,24 @@
     div.hq-div-nav-mini {
         visibility: visible;
     }
+
+    p.hq-bible-verse {
+        font-size: .6em;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    body {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
     div.hq-card {
         visibility: show;
         margin-top: 2vh;
         padding: 6vh;
-        width: 38vh;
-        height: 38vh;
     }
 
     div.hq-div-nav {
@@ -40,6 +54,12 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    body {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
     div.hq-card {
         visibility: show;
         margin-top: 2vh;
@@ -56,10 +76,21 @@
     div.hq-div-nav-mini {
         visibility: visible;
     }
+    
+    ul.hq-nav-mini {
+        visibility: hidden;
+        height: 0px;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    body {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
     div.hq-card {
         visibility: show;
         margin-top: 2vh;
@@ -79,6 +110,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    body {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
     div.hq-card {
         visibility: show;
         margin-top: 2vh;

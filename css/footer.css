@@ -4,9 +4,17 @@ footer {
 div.hq-footer {
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     bottom: 0%;
     outline: var(--havaqOutlineWhite);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+}
+
+p.hq-bible-verse {
+    margin: 1vh;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: .8em;
+    color: var(--havaqWhite);
 }
