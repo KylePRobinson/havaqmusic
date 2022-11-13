@@ -15,6 +15,6 @@ document.write(`
         <link rel='stylesheet' type='text/css' href='css/contact.css?v=2'>
         <link rel='stylesheet' type='text/css' href='css/queries.css?v=2'>
         <link rel='stylesheet' type='text/css' href='css/sections.css?v=2'>
-        <script type="text/javascript" src="js/js.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
     </head>
 `)
