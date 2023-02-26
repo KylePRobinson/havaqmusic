@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Share+Tech+Mono&family=Silkscreen&family=Source+Code+Pro&family=Tomorrow&display=swap');
+
+/* 
+font-family: 'Play', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Silkscreen', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Tomorrow', sans-serif;
+*/
+
+/*
+background-color: #000000;
+opacity: 0.8;
+background-image: radial-gradient(#ffffff 0.4px, #000000 0.4px);
+background-size: 8px 8px;
+*/
+
 :root {
     --havaqgreen: rgb(0, 255, 245);
-    --havaqblack: rgb(0, 0, 0);
+    --havaqblack: rgb(0, 5, 15);
     --havaqred: rgb(255, 0, 55);
+    --havaqwhite: rgb(245, 255, 255);
 }
 
 body {
     background-color: var(--havaqblack);
 }
 
-p, a {
-    font-family: 'Cutive Mono', monospace;
+p, a, .image-text {
+    font-family: 'Play', sans-serif;
     font-size: 1em;
+    color: var(--havaqwhite);
 }
 
 .container {
@@ -19,14 +38,54 @@ p, a {
     height: 100%;
 }
 
-div.image-header-icon {
-    display: flex;
+.logos {
+    margin: 0 auto;
     justify-content: center;
+    display: flex;
+}
+
+.image-button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    height: 150px;
+    width: 150px;
+    color: var(--havaqwhite);
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-end;
+}
+
+.image-text {
+    text-shadow: 0px 0px 6px var(--havaqblack), 0px 0px 6px var(--havaqblack), 0px 0px 6px var(--havaqblack);
+    font-size: 1.2em;
+}
+
+.image-button:hover {
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#button-hq {
+    background-image: url("./images/havaqglitchlogo.gif");
+}
+
+#button-bag {
+    background-image: url("./images/biscuitandgravylogo.png");
+}
+
+#button-ww {
+
 }
 
 div.image-header-icon img {
     margin: 0 auto;
     max-width: 10em;
+    border-radius: 50%;
 }
 
 ul.link-list-vertical {
@@ -44,7 +103,7 @@ ul.link-list-vertical a {
     padding: 1em 1em;
     text-decoration: none;
     font-size: 2em;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
 }
 
 li.link-list-item {
@@ -62,6 +121,18 @@ p.badge-pill {
     color: white;
     max-width: 25em;
     border: 1px solid var(--havaqred);
-    border-radius: 2em;
+    border-radius: 5em;
     font-size: 1.2em;
+}
+
+#havaqLinkCard {
+
+}
+
+#bagLinkCard {
+    display: none;
+}
+
+#wwLinkCard {
+    display: none;
 }
